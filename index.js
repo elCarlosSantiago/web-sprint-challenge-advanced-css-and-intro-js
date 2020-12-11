@@ -207,11 +207,11 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-console.log('Task1.1', artists[0])
+// console.log('Task1.1', artists[0])
 
 //(2) Bio of the third artist (2nd index) in the array 
 
-console.log('task1.2', artists[2]['bio'])
+// console.log('task1.2', artists[2]['bio'])
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
@@ -286,11 +286,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist( /*Your Code Here*/ ) {
-    /*Your Code Here*/
+function addArtist(arr) {
+    arr.push({
+        id: 20,
+        name: 'Carlos Santiago Nevett',
+        genre: 'Web Design',
+        nationality: 'Venezuelan',
+        bio: 'Civil Engineer turned Software',
+    })
+    return arr
 }
 
-
+// console.log('Task 6', addArtist(artists))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -299,11 +306,18 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt( /*Your Code Here*/ ) {
-    /*Your Code Here*/
+function lotsOfArt(arr) {
+    const newArr = []
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]['paintings'] >= 100) {
+            newArr.push(arr[i]['name'])
+        }
+    }
+    return newArr
 }
 
-
+console.log(artists[0]['paintings'])
+console.log('Task 7', lotsOfArt(artists))
 
 
 // 🎨🎨 STRETCH 🎨🎨//
