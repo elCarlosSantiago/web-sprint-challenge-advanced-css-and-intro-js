@@ -207,11 +207,11 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-// console.log('Task1.1', artists[0])
+console.log('Task1.1', artists[0])
 
 //(2) Bio of the third artist (2nd index) in the array 
 
-// console.log('task1.2', artists[2]['bio'])
+console.log('task1.2', artists[2]['bio'])
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
@@ -367,8 +367,6 @@ console.log('Stretch 2', randomize(artists))
 
 /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
 Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
-
-
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/

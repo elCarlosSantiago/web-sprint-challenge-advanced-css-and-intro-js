@@ -92,10 +92,6 @@ video {
 
 /*GENERAL STYLES*/
 
-* {
-    /* border: 1px solid grey; */
-}
-
 html {
     font-size: 62.5%;
 }
@@ -238,6 +234,64 @@ button:hover {
     width: 100%;
 }
 
+@media(max-width:800px) {
+    body {
+        line-height: normal;
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 2%;
+    }
+    nav {
+        width: 40%;
+        justify-content: space-evenly;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    nav a:first-child {
+        font-weight: bold;
+    }
+    a {
+        font-size: 2rem;
+    }
+    .title-container div {
+        width: 100%;
+        height: 60vh;
+        margin-bottom: 2%;
+    }
+    .title-container hr {
+        width: 100%;
+    }
+    .artists-container {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    .artist {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .artist img {
+        width: 80%;
+        height: auto;
+        margin: 8% auto 5%;
+    }
+    .bio {
+        margin: 2% auto;
+        width: 100%;
+        justify-content: center;
+        padding: 1%;
+    }
+    .white-banner {
+        height: 10vh;
+    }
+}
+
 @media(max-width:500px) {
     body {
         line-height: normal;
@@ -274,6 +328,7 @@ button:hover {
     }
     .artist {
         width: 80%;
+        display: flex;
         justify-content: center;
         flex: nowrap;
     }
